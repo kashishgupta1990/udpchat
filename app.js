@@ -18,8 +18,6 @@ if (argv.server) {
     app.bind(argv.server);
 }
 else if (argv.send) {
-    console.log(argv);
-
     var message = new Buffer(argv._.join(' '));
     var hostPort = argv.send.split(':');
     var host = hostPort[0];
@@ -28,6 +26,7 @@ else if (argv.send) {
         if (err) {
             console.log('Client: ', err);
         } else {
+            console.log('Message Sent');
             app.close();
         }
     });
