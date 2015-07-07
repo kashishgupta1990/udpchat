@@ -1,0 +1,10 @@
+{
+  "name": "udp-chat",
+  "version": "0.0.1",
+  "bin": {
+    "udpchat": "app.js"
+  },
+  "dependencies": {
+    "optimist": "^0.6.1"
+  }
+}
